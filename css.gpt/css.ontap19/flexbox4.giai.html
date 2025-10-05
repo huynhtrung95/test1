@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>FLEXBOX NAVBAR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* box-sizing: border-box; */
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between; /* logo bên trái, menu bên phải */
+      align-items: center;
+      background-color: lightblue;
+      height: 60px;
+      padding: 0 30px;
+    }
+
+    .logo {
+      font-size: 2rem;
+      color: darkblue;
+    }
+
+    .menu {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
+      transition: 0.3s;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+
+    .menu a:hover {
+      color: white;
+      background-color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo"><i class="fa-brands fa-magento"></i></div>
+
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</body>
+</html>

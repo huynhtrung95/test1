@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head lang="vi">
+    <meta charset="utf-8">
+    <TItle>FLEXBOX</TItle>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+    * {
+      margin: 0;
+      padding: 0 ;
+      box-sizing: border-box;
+    }
+
+.container{
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 0,5px;
+    
+}
+
+.logo{
+    color: darkblue;
+    font-size:x-large;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+     padding: 0.5rem 1rem;
+     transition: 0.3s;
+}
+
+.menu{
+    display: flex;
+    gap: 1rem;
+    
+
+}
+
+ .menu a:hover {
+      color: white;
+      background-color: brown;
+      }
+</style>
+</head>
+
+<body>
+    
+    <div class="container">
+    <div class="logo"><i class="fa-brands fa-magento"></i></div>
+      <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+        </div>
+
+</body>
+

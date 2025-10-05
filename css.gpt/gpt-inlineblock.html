@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<Head lang="vi">
+    <Meta charset="utf-8"></Meta>
+    <title>GPT INLINE BLOCK</title>
+
+<style>
+.menu{
+    /* Căn đều các phần tử Li : Trang chủ ... 
+    text-align không chỉ áp dụng cho chữ, mà cho mọi phần tử inline và inline-block nằm trong phần tử cha.*/
+text-align: center;
+list-style-type: none;
+}
+.menu1{
+    /* Cho thanh menu nằm trên 1 hàng */
+    display: inline-block;
+    
+
+}
+
+.link1{
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 6px;
+    margin-right: 20px;
+    display: inline-block;
+    background-color: bisque;
+    text-decoration: none;
+    color: black;
+
+}
+A:hover{
+background-color: black;
+color: bisque;
+}
+
+</style>
+
+</Head>
+
+<Body>
+<span>
+    <ul class="menu">
+        <Li class="menu1" > <a class="link1" href="https://www.youtube.com/watch?v=FoHuzzlq4wU&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=70">Trang Chủ</a></Li>
+        <Li class="menu1"><a class="link1" href="https://www.youtube.com/watch?v=FoHuzzlq4wU&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=70">Sản Phẩm</a></Li>
+        <Li class="menu1"><a class="link1" href="https://www.youtube.com/watch?v=FoHuzzlq4wU&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=70">Dịch Vụ</a></Li>
+        <Li class="menu1"><a class="link1" href="https://www.youtube.com/watch?v=FoHuzzlq4wU&list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&index=70">Liên Hệ</a></Li>
+    </ul>
+</span>
+
+</ul>
+</Body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Bài tập 1 - Hover Effect</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s ease; /* tạo hiệu ứng mượt */
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+        .box2 {
+            background-color: blueviolet;
+        }
+        .box3 {
+            background-color: yellowgreen;
+        }
+
+        /* Hover Effect */
+        .box1:hover {
+            background-color: lightseagreen; /* đổi màu */
+            transform: scale(1.1);           /* phóng to */
+        }
+        .box2:hover {
+            background: linear-gradient(to right, purple, pink); /* gradient */
+            transform: rotate(10deg);        /* xoay nhẹ */
+        }
+        .box3:hover {
+            background-color: gold;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5); /* thêm bóng đổ */
+        }
+    </style>
+</head>
+<body>
+   <div class="box box1"></div>
+   <div class="box box2"></div>
+   <div class="box box3"></div> 
+</body>
+</html>

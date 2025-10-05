@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head lang="vi">
+    <meta charset="utf-8">
+    <title>FLEXBOX 2</title>
+
+<style>
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightseagreen;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.card {
+    height: 3rem;
+    width: 5rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* hiệu ứng hover cho đẹp */
+.card:hover {
+    background-color: gold;
+    transform: scale(1.05);
+}
+
+/* Khi màn hình nhỏ, chuyển menu thành cột */
+@media (max-width: 600px) {
+    .box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card {
+        width: 100%;
+        margin: 2px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="card card1">Home</div>
+        <div class="card card2">About</div>
+        <div class="card card3">Services</div>
+        <div class="card card4">Blog</div>
+        <div class="card card5">Contact</div>
+    </div>
+</body>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head lang="vi">
+<meta charset="utf-8">
+<title>FLEXBOX 1</title>
+
+<STYle>
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    /* space-around: căn đều theo chiều dọc trong container */
+    align-content:space-around;
+    justify-content: center;
+    height: 300px;
+    border: 3px dashed gray;
+    /* căn theo chiều ngang */
+    gap: 5px;  
+    background-color: antiquewhite;
+}
+.card{
+    width: 30%;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    font-style:initial;
+
+}
+
+.card1{
+
+}
+</STYle>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card card1">card1</div>
+        <div class="card card2">card2</div>
+        <div class="card card3">card3</div>
+        <div class="card card4">card4</div>
+        <div class="card card5">card5</div>
+        <div class="card card6">card6</div>
+    </div>
+</body>

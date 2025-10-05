@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Card</title>
+  <style>
+    body {
+        margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    .card {
+      display: inline-block;          /* để nhiều card nằm ngang */
+      width: 200px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin: 15px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      vertical-align: top;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .card button {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: gold;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .card button:hover {
+      background-color: orange;
+      color: white;
+    }
+
+    .card:hover{
+        background-color: rgb(226, 212, 212);
+    }
+    /* bài 3 */
+      .profile {
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      background: white;
+      padding: 20px;
+      width: 400px;
+      margin: auto;
+    }
+
+    .avatar {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .avatar img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;  /* ảnh tròn */
+    }
+
+    .info {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 20px;
+      max-width: 250px;
+    }
+
+    .info h2 {
+      margin: 0;
+      color: #333;
+    }
+
+    .info p {
+      margin-top: 5px;
+      color: #666;
+
+      /* bài 4 */
+
+      
+    }
+
+    .footer{
+        margin-top: 30px;
+    }
+
+     .footer-col {
+      display: inline-block;   /* xếp ngang */
+      width: 30%;
+      vertical-align: top;     /* thẳng hàng trên */
+      padding: 0 15px;
+      box-sizing: border-box;  /* tránh tràn layout */
+    }
+
+    .footer h3 {
+      margin-top: 0;
+      margin-bottom: 25px;
+      color:orange;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer ul li {
+      margin: 6px 0;
+    }
+
+    .footer a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: rgb(40, 40, 219);}
+    
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://www.google.com/imgres?q=football%20shoes%20small%20size%20picture&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41I5gTYuNvL._SY300_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.sa%2F-%2Fen%2FFootball-Sneakers-Teenager-Athletics-Competition%2Fdp%2FB0BNDS78WY&docid=I_tKFrjw_CUsOM&tbnid=nC7bfEVuae9q0M&vet=12ahUKEwjm2cyGhruPAxVpR2wGHcHENKMQM3oECBkQAA..i&w=300&h=300&hcb=2&ved=2ahUKEwjm2cyGhruPAxVpR2wGHcHENKMQM3oECBkQAA" alt="Sản phẩm 1">
+    <h3>Giày đá bóng</h3>
+    <button>Mua ngay</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200" alt="Sản phẩm 2">
+    <h3>Áo thể thao</h3>
+    <button>Mua ngay</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200" alt="Sản phẩm 3">
+    <h3>Bóng đá</h3>
+    <button>Mua ngay</button>
+  </div>
+
+   <div class="profile">
+    <div class="avatar">
+      <img src="https://www.google.com/imgres?q=football%20shoes%20small%20size%20picture&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41I5gTYuNvL._SY300_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.sa%2F-%2Fen%2FFootball-Sneakers-Teenager-Athletics-Competition%2Fdp%2FB0BNDS78WY&docid=I_tKFrjw_CUsOM&tbnid=nC7bfEVuae9q0M&vet=12ahUKEwjm2cyGhruPAxVpR2wGHcHENKMQM3oECBkQAA..i&w=300&h=300&hcb=2&ved=2ahUKEwjm2cyGhruPAxVpR2wGHcHENKMQM3oECBkQAA" alt="Avatar">
+    </div>
+    <div class="info">
+      <h2>VUA THỂ THAO</h2>
+      <p> Sản phẩm thể thao uy tín nhất Đà Nẵng , liên hệ ngay Shop VUA THỂ THAO.</p>
+    </div>
+  </div>
+   <div class="footer">
+    <div class="footer-col">
+      <h3>Về Chúng Tôi</h3>
+      <p>Công ty chuyên cung cấp giày đá bóng, quần áo và phụ kiện thể thao chính hãng.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Liên Kết Nhanh</h3>
+      <ul>
+        <li><a href="#">Trang Chủ</a></li>
+        <li><a href="#">Sản Phẩm</a></li>
+        <li><a href="#">Dịch Vụ</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Liên Hệ</h3>
+      <p>📍 79 Điện Biên Phủ, Đà Nẵng</p>
+      <p>📞 0934 868 666</p>
+      <p>✉️ support@vuathethao.vn</p>
+    </div>
+</body>
+</html>
